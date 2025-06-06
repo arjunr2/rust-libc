@@ -117,7 +117,8 @@ cfg_if! {
                  target_arch = "riscv64",
                  target_arch = "s390x",
                  target_arch = "csky",
-                 target_arch = "loongarch64"))] {
+                 target_arch = "loongarch64",
+                 target_arch = "wasm32"))] {
         pub const FICLONE: ::c_ulong = 0x40049409;
         pub const FICLONERANGE: ::c_ulong = 0x4020940D;
     }
